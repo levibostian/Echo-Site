@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Echo | Creatives for social and human rights.
+        link(rel='stylesheet', href='https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css')
+        link(rel='stylesheet', type='text/css', href='custom.css')
+        include google_analytics.pug
+    body.bg-white
+        nav.w-100.pt5.fixed.top-0.db.bg-near-black
+            .w-100.w-80-l.center
+                a.pointer.link.db.dib-ns(href="/index.html")
+                    img(src="img/logo.png")
+                .db.dib-ns.fr.white.serif
+                    a.pointer.link.hover-bb(href="#")
+                        p.f3.dib.mh3.white Events
+                    a.pointer.link.hover-bb(href="#")
+                        p.f3.dib.mh3.white Resources
+                    a.pointer.link.hover-bb(href="#")
+                        p.f3.dib.mh3.white Partners
+        header.min-vh-100.w-100.bg-near-black.bg-bottom.flex.justify-center.content-center.flex-column(style='background-image:url("img/hero_background.png")')
+            h2.tl.w-100.w-60-ns.center.white.f2.helvetica Creatives for social and human rights.
+        .w-100.bg-white.helvetica.f3.fw5.lh-copy
+            p.w-50-ns.w-90.center.pt5 Art and design shape the world around us. It starts conversations. We seek to create an echo of empathy through
+                | our work that shapes how you think about your fellow humans.
+
+            p.w-50-ns.w-90.center.pb5 We are artists, designers, and creators gathering every month to discuss creativity and social and
+                | human rights issues shaping the world around us globally and in our communities. Join us for drinks and good times as we figure out what’s next.
+        .w-100.bg-near-black
+            .w-80-l.w-100.pv6.center
+                .db.dib-ns.bt.bb.b-white.white.w5.mh4
+                    p.dib.serif.f3.pt4 Meetups
+                    img.fr.pt4.pr4(src="img/icon_meetups.png")
+                    p.fw1.lh-copy.w-80(style="height:6rem;") Mingle with local creatives to discuss global and local humanitarian issues.
+                    a.pointer.link.dib(href="#")
+                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
+                .db.dib-ns.bt.bb.b-white.white.w5.mh4
+                    p.dib.serif.f3.pt4 Art Shows
+                    img.fr.pt4.pr4(src="img/icon_artshows.png")
+                    p.fw1.lh-copy.w-80(style="height:6rem;") Somewhat regularly we host art shows to bring awareness to important issues. Join us.
+                    a.pointer.link.dib(href="#")
+                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
+                .db.dib-ns.bt.bb.b-white.white.w5.mh4
+                    p.dib.serif.f3.pt4 Resources
+                    img.fr.pt4.pr4(src="img/icon_resources.png")
+                    p.fw1.lh-copy.w-80(style="height:6rem;") To find ways to help, or get help yourself, please look through our list of local organizations.
+                    a.pointer.link.dib(href="#")
+                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
+        footer.w-100
+            .w-100.w-80-l.center.serif.pv6
+                .dib.fl.flex.justify-center.content-center
+                    img.pr4(src="img/logo_dark.png" style="height:72px;")
+                    p.f3.dib.ph3 Peace
+                    p.f3.dib.ph3 Hope
+                    p.f3.dib.ph3 Love
+                .dib.fr.flex.justify-center.content-center
+                    img.pr2.pv2(src="img/twitter.png" style="height:30px;")
+                    a.pointer.link(href="#")
+                        p.black @createecho
+                    img.pl4.pr2.pv2(src="img/email.png" style="height:22px;")
+                    a.pointer.link(href="#")
+                        p.black hello@
+            h2.f6.fw1.tc Started with ♥ in the Silicon Prairie        © 2017 Echo
