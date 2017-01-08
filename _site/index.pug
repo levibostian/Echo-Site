@@ -4,21 +4,11 @@ html(lang='en')
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title Echo | Creatives for social and human rights.
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css')
-        link(rel='stylesheet', type='text/css', href='custom.css')
+        link(rel='stylesheet', type='text/css', href='/custom.css')
         include google_analytics.pug
     body.bg-white
-        nav.w-100.pt5-l.pt3-m.fixed.top-0.db.bg-near-black
-            .w-100.w-80-l.center.ph3
-                a.pointer.link.db.dib-ns.tc.tl-ns(href="/index.html")
-                    img.h2.h3-ns.pt2.p0-ns(src="img/logo.png")
-                .db.dib-ns.fr-ns.tc.white.serif
-                    a.pointer.link.hover-bb-white(href="#")
-                        p.f3-ns.dib.mh3.white Events
-                    a.pointer.link.hover-bb-white(href="#")
-                        p.f3-ns.dib.mh3.white Resources
-                    a.pointer.link.hover-bb-white(href="#")
-                        p.f3-ns.dib.mh3.white Partners
-        header.min-vh-100.w-100.bg-near-black.bg-bottom.flex.justify-center.content-center.flex-column(style='background-image:url("img/hero_background.png")')
+        include nav.pug
+        header.min-vh-100.w-100.bg-near-black.bg-bottom.flex.justify-center.content-center.flex-column.contain(style='background-image:url("/img/hero_background.png")')
             h2.tl.w-90.w-60-ns.center.white.f2.helvetica Creatives for social and human rights.
         .w-100.bg-white.helvetica.f3.fw5.lh-copy
             p.w-50-ns.w-90.center.pt5 Art and design shape the world around us. It starts conversations. We seek to create an echo of empathy through
@@ -30,34 +20,20 @@ html(lang='en')
             .w-100.pv6.tc
                 .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
                     p.dib.serif.f3.pt4 Meetups
-                    img.fr.pt4.pr4(src="img/icon_meetups.png")
+                    img.fr.pt4.pr4(src="/img/icon_meetups.png")
                     p.fw1.lh-copy.w-80(style="height:6rem;") Mingle with local creatives to discuss global and local humanitarian issues.
                     a.pointer.link.dib(href="#")
                         p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
                 .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
                     p.dib.serif.f3.pt4 Art Shows
-                    img.fr.pt4.pr4(src="img/icon_artshows.png")
+                    img.fr.pt4.pr4(src="/img/icon_artshows.png")
                     p.fw1.lh-copy.w-80(style="height:6rem;") Somewhat regularly we host art shows to bring awareness to important issues. Join us.
                     a.pointer.link.dib(href="#")
                         p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
                 .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
                     p.dib.serif.f3.pt4 Resources
-                    img.fr.pt4.pr4(src="img/icon_resources.png")
+                    img.fr.pt4.pr4(src="/img/icon_resources.png")
                     p.fw1.lh-copy.w-80(style="height:6rem;") To find ways to help, or get help yourself, please look through our list of local organizations.
                     a.pointer.link.dib(href="#")
                         p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
-        footer.w-100
-            .w-100.w-80-l.center.serif.pv6-ns.flex-row-ns.flex-column.flex.justify-between.ph3
-                .fl.flex.justify-center.content-center
-                    img.pr4.dn.dib-ns(src="img/logo_dark.png" style="height:72px;")
-                    p.f3.dib.ph3 Peace
-                    p.f3.dib.ph3 Hope
-                    p.f3.dib.ph3 Love
-                .dib.fr.flex.justify-center.content-center.pt3
-                    img.pr2.pv2(src="img/twitter.png" style="height:30px;")
-                    a.pointer.link.hover-bb-black(href="#")
-                        p.black @createecho
-                    img.pl4.pr2.pv2(src="img/email.png" style="height:22px;")
-                    a.pointer.link.hover-bb-black(href="#")
-                        p.black hello@
-            h2.f6.fw1.tc Started with ♥ in the Silicon Prairie © 2017 Echo
+        include footer.pug
