@@ -1,3 +1,7 @@
-.hover-bb :hover {
-    border-bottom: 3px solid #ffffff; /* or whatever colour you'd prefer */
+.hover-bb-white :hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.hover-bb-black :hover {
+    border-bottom: 3px solid #000000;
 }
