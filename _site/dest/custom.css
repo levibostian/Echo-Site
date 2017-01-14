@@ -15,8 +15,12 @@ h1 { font-size: 3rem; font-weight: normal; } /* 48px */
 h2 { font-size: 2rem; font-weight: normal; } /* 32px */
 h3 { font-size: 1.5rem; font-weight: normal; } /* 24px */
 h4 { font-size: 1.25rem; font-weight: normal; } /* 20px */
-h5 { font-size: 0.75rem; font-weight: normal; } /* 12px */ /* copy h1 */ /* copy h2 */
-.f3 { font-size: 1.5rem; } /* copy h3n */ /* copy h4 */
+h5 { font-size: 0.75rem; font-weight: normal; } /* 12px */
+
+.f1 { font-size: 3rem; } /* copy h1 */
+.f2 { font-size: 2rem; } /* copy h2 */
+.f3 { font-size: 1.5rem; } /* copy h3n */
+.f4 { font-size: 1.25rem; } /* copy h4 */
 .f5 { font-size: 0.75rem; } /* copy h5 */
 
 .mt3-half { margin-top: 1.5rem; }
