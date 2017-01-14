@@ -5,35 +5,31 @@ html(lang='en')
         title Echo | Creatives for social and human rights.
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css')
         link(rel='stylesheet', type='text/css', href='/custom.css')
+        link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:600,700|Rubik:300,500', rel='stylesheet')
+
         include google_analytics.pug
     body.bg-white
         header.min-vh-100.w-100.bg-near-black.bg-bottom.flex.justify-center.content-center.flex-column.contain(style='background-image:url("/img/hero_background.png")')
             include nav.pug
-            h2.tl.w-90.w-60-ns.center.white.f2.helvetica Creatives for social and human rights.
-        .w-100.bg-white.helvetica.f3.fw5.lh-copy
-            p.w-50-ns.w-90.center.pt5 Art and design shape the world around us. It starts conversations. We seek to create an echo of empathy through
+            h1.tl.w-100.w-80-l.ph3.center.white.rubik-med Creatives for social and human rights.
+        .w-100.bg-white.f3.fw5.lh-copy
+            p.f2-ns.f3.w-80-ns.w-90.center.pt5.rubik-med Art and design shape the world around us. It starts conversations. We seek to create an echo of empathy through
                 | our work that shapes how you think about your fellow humans.
 
-            p.w-50-ns.w-90.center.pb5 We are artists, designers, and creators gathering every month to discuss creativity and social and
+            p.f2-ns.f3.w-80-ns.w-90.center.pb5.rubik-med We are artists, designers, and creators gathering every month to discuss creativity and social and
                 | human rights issues shaping the world around us globally and in our communities. Join us for drinks and good times as we figure out what’s next.
         .w-100.bg-near-black
             .w-100.pv6.tc
-                .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
-                    p.dib.serif.f3.pt4 Meetups
-                    img.fr.pt4.pr4(src="/img/icon_meetups.png")
-                    p.fw1.lh-copy.w-80(style="height:6rem;") Mingle with local creatives to discuss global and local humanitarian issues.
-                    a.pointer.link.dib(href="#")
-                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
-                .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
-                    p.dib.serif.f3.pt4 Art Shows
-                    img.fr.pt4.pr4(src="/img/icon_artshows.png")
-                    p.fw1.lh-copy.w-80(style="height:6rem;") Somewhat regularly we host art shows to bring awareness to important issues. Join us.
-                    a.pointer.link.dib(href="#")
-                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
-                .db.dib-l.center.bt.bb.b-white.white.w5.mh4-l.tl
-                    p.dib.serif.f3.pt4 Resources
-                    img.fr.pt4.pr4(src="/img/icon_resources.png")
-                    p.fw1.lh-copy.w-80(style="height:6rem;") To find ways to help, or get help yourself, please look through our list of local organizations.
-                    a.pointer.link.dib(href="#")
-                        p.f4.fw1.white.b.ba.pv2.ph3.serif.pt3.mb4(href="#") Learn More
+                mixin article(title, img, desc)
+                    .db.dib-l.center.bt.bb.b-white.white.w-20-l.w-30-m.w-70.mh4-l.tl
+                        h2.dib.pt4.cormorant-bold= title
+                        img.fr.pt4.pr4-l.w3(src=img)
+                        h4.fw1.lh-copy.rubik-light.h4-l= desc
+                        a.pointer.link.dib(href="#")
+                            p.f3.fw1.white.b.ba.pv2.ph3.pt3.mb4.cormorant-semi(href="#") Learn More
+
+                +article('Meetups', '/img/icon_meetups.png', 'Mingle with local creatives to discuss global and local humanitarian issues.')
+                +article('Art Shows', '/img/icon_artshows.png', 'Somewhat regularly we host art shows to bring awareness to important issues. Join us.')
+                +article('Resources', '/img/icon_resources.png', 'To find ways to help, or get help yourself, please look through our list of local organizations.')
         include footer.pug
+        script(src='/js/date_footer.js')

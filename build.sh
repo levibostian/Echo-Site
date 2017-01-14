@@ -1,1 +1,1 @@
-pug _site/index.pug
+pug _site/*.pug
