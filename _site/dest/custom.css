@@ -1,0 +1,24 @@
+.hover-bb-white :hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.hover-bb-black :hover {
+    border-bottom: 3px solid #000000;
+}
+
+.rubik-med { font-family: 'Rubik', sans-serif; font-weight:500; }
+.rubik-light { font-family: 'Rubik', sans-serif; font-weight:300; }
+.cormorant-semi { font-family: 'Cormorant Garamond', serif; font-weight:600; }
+.cormorant-bold { font-family: 'Cormorant Garamond', serif; font-weight:700; }
+
+h1 { font-size: 3rem; font-weight: normal; } /* 48px */
+h2 { font-size: 2rem; font-weight: normal; } /* 32px */
+h3 { font-size: 1.5rem; font-weight: normal; } /* 24px */
+h4 { font-size: 1.25rem; font-weight: normal; } /* 20px */
+h5 { font-size: 0.75rem; font-weight: normal; } /* 12px */ /* copy h1 */ /* copy h2 */
+.f3 { font-size: 1.5rem; } /* copy h3n */ /* copy h4 */
+.f5 { font-size: 0.75rem; } /* copy h5 */
+
+.mt3-half { margin-top: 1.5rem; }
+
+.bg-near-black { background-color: #1C1C1F; }
